@@ -1,0 +1,43 @@
+name: deploy component catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download catalog static artifact
+        run: |
+          curl --fail --location 'https://sdmntprjapaneast.oaiusercontent.com/files/00000000-6080-8209-968d-05e4391a953d/raw?se=2026-10-02T14%3A13%3A59Z&sp=r&sv=2026-02-06&sr=b&scid=0fa864a2-b8cf-5a77-9d87-fc824c41e22b&skoid=9063adf3-a524-4acf-b70a-8731b33f2f50&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-02T02%3A38%3A37Z&ske=2026-10-03T02%3A38%3A37Z&sks=b&skv=2026-02-06&sig=kKv6XeSdeVGQ2inZTKgRrZluV/JgoBMLrRVI4bXGZg4%3D' --output /tmp/catalog.zip
+          mkdir -p site
+          unzip -q /tmp/catalog.zip -d site
+          sed -i 's#/planes-webkit/#/planes-webkit-catalog/#g' site/index.html
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
