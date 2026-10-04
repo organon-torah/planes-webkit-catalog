@@ -1,3 +1,3 @@
-import{c as e,o as t,t as n}from"./index-DoOm-70W.js";import{t as r}from"./MarkdownSourceEditor-DLu4-dbU.js";var i=t(),a=e();function o(){let[e,t]=(0,i.useState)(`# 合成文書
+import{c as e,o as t,t as n}from"./index-5Ck4QrKk.js";import{t as r}from"./MarkdownSourceEditor-D2uxd11H.js";var i=t(),a=e();function o(){let[e,t]=(0,i.useState)(`# 合成文書
 
 ここに入力します。`),o={info:{name:`info`,label:`情報`},check:{name:`check_circle`,label:`確認`},star:{name:`star`,label:`お気に入り`}};return(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(r,{value:e,onChange:t,label:`合成文書の原文`,icons:o}),(0,a.jsx)(n,{source:e,headingOffset:3,icons:o})]})}export{o as default};

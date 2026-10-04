@@ -1,4 +1,4 @@
-import{c as e,i as t,o as n,s as r,t as i}from"./index-DoOm-70W.js";import{t as a}from"./MarkdownSourceEditor-DLu4-dbU.js";var o=n(),s=e(),c=`alpha 日本語
+import{c as e,i as t,o as n,s as r,t as i}from"./index-5Ck4QrKk.js";import{t as a}from"./MarkdownSourceEditor-D2uxd11H.js";var o=n(),s=e(),c=`alpha 日本語
 
 Paragraph with **source** text.
 `,l={info:{name:`info`,label:`情報`},check:{name:`check_circle`,label:`確認`},star:{name:`star`,label:`お気に入り`}};function u(){let[e,n]=(0,o.useState)(c),[u,d]=(0,o.useState)(!1),[f,p]=(0,o.useState)(!1),[m,h]=(0,o.useState)(0),[g,_]=(0,o.useState)(!0);return(0,s.jsxs)(`section`,{"aria-label":`原文エディタの例`,"data-testid":`editor-example`,children:[(0,s.jsx)(`h2`,{children:`原文エディタ`}),(0,s.jsxs)(`div`,{className:`catalog-row actions`,children:[(0,s.jsx)(t,{checked:u,onChange:e=>d(e.target.checked),children:`読み取り専用`}),(0,s.jsx)(t,{checked:f,onChange:e=>p(e.target.checked),children:`無効化`}),(0,s.jsx)(t,{checked:g,onChange:e=>_(e.target.checked),children:`アイコン一覧を使う`}),(0,s.jsx)(r,{onClick:()=>n(`External value
