@@ -6,6 +6,8 @@ The synthetic catalog previews a **2.0.0 development candidate**. The candidate 
 
 The updated preview aligns the catalog open/close controls, keeps Drawer links at their label width, shows an icon-only Markdown picker, and sizes mobile Modal/Dialog windows to their content with the footer at the bottom. It also preserves single disabled-control opacity and keyboard access to Accordion/contenteditable content in Drawers.
 
+Opening the icon picker focuses its Close button. Select the search field with a tap or Tab to search; canceling or inserting returns to the editor with its selection/history preserved.
+
 Examples contain no private OCR text/images, package tarballs or source maps. The existing static Pages workflow is preserved.
 
 https://organon-torah.github.io/planes-webkit-catalog/
