@@ -9,5 +9,6 @@ The updated preview aligns the catalog open/close controls, keeps Drawer links a
 Opening the icon picker focuses its Close button. Select the search field with a tap or Tab to search; canceling or inserting returns to the editor with its selection/history preserved.
 
 Examples contain no private OCR text/images, package tarballs or source maps. The existing static Pages workflow is preserved.
+The 55 component samples now include Panel, an additive section component with separate header/body slots and 20px padding (16px on screens up to 640px). Its ui-panel classes leave consumer-owned panel classes unchanged; consumers adopt the component explicitly.
 
 https://organon-torah.github.io/planes-webkit-catalog/
