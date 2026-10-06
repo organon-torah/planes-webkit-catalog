@@ -1,16 +1,11 @@
 # planes-webkit-catalog
 
-Public GitHub Pages catalog for the private `planes-webkit` UI library.
+共通UIライブラリ planes-webkit **2.2.0** の公開コンポーネントカタログです。57コンポーネントの合成サンプルを表示します。
 
-The synthetic catalog previews a **2.0.0 development candidate**. The candidate adds standard CSS for ordinary HTML, typography-based quotations and square document tables/code, Drawer navigation with flat search results, and notification queue control through Toast (items/onDismiss). This preview does not publish or release the private library; the released packages remain at 1.4.0.
-
-The updated preview aligns the catalog open/close controls, keeps Drawer links at their label width, shows an icon-only Markdown picker, and sizes mobile Modal/Dialog windows to their content with the footer at the bottom. It also preserves single disabled-control opacity and keyboard access to Accordion/contenteditable content in Drawers.
-
-Opening the icon picker focuses its Close button. Select the search field with a tap or Tab to search; canceling or inserting returns to the editor with its selection/history preserved.
-
-Examples contain no private OCR text/images, package tarballs or source maps. The existing static Pages workflow is preserved.
-The 55 component samples now include Panel, an additive section component with separate header/body slots and 20px padding (16px on screens up to 640px). Its ui-panel classes leave consumer-owned panel classes unchanged; consumers adopt the component explicitly.
+列ごとのopt-in省略（既定off）、全文表示、標準Linkを共有するDataTable action、Button内Icon.badgeの安定した配置を確認できます。Text例では結合文字・emoji、DataTable例では16書記素のID省略と完全値のcopy/link/filterを扱います。
 
 https://organon-torah.github.io/planes-webkit-catalog/
 
-The revised preview keeps the Toast queue/deadlines and adds shared spacing:16px between document/editor/code blocks and ordinary table/form content,6px within ordinary labels, and comfortable separation between native buttons. MarkdownSourceEditor and its composed preview no longer touch. These are synthetic examples of the2.0.0 candidate; the released private packages remain1.4.0.
+公開するのは検証済みstatic site/だけです。私有アカウントID・OCR本文・画像、tarball、package source、source map、credentialsを含めません。共通UI正本・固定配布物はprivate repositoryに保持し、G&S/SWへの採用は各consumerの担当が行います。
+
+既存Pages workflow（checkout→site upload→deploy）は変更せず、期限付きartifact URLを固定しません。Chromium desktop/mobileで確認し、物理iPhone/Safari/Firefox/実screen readerは未検証です。
