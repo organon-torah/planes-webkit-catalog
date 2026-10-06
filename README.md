@@ -1,11 +1,11 @@
 # planes-webkit-catalog
 
-共通UIライブラリ planes-webkit **2.2.0** の公開コンポーネントカタログです。57コンポーネントの合成サンプルを表示します。
+planes-webkit **2.2.1** の公開コンポーネントカタログです。57コンポーネントの合成サンプルを表示します。
 
-列ごとのopt-in省略（既定off）、全文表示、標準Linkを共有するDataTable action、Button内Icon.badgeの安定した配置を確認できます。Text例では結合文字・emoji、DataTable例では16書記素のID省略と完全値のcopy/link/filterを扱います。
+数値で明示する省略設定（既定off、標準例12、既存16はconsumerで明示的に12へ変更）、全文/省略の切替、行ごとの細いLink表示、共通Icon.badgeの配置を確認できます。Button、Drawer、DataTable actionでも同じ表示規約を使います。
 
 https://organon-torah.github.io/planes-webkit-catalog/
 
-公開するのは検証済みstatic site/だけです。私有アカウントID・OCR本文・画像、tarball、package source、source map、credentialsを含めません。共通UI正本・固定配布物はprivate repositoryに保持し、G&S/SWへの採用は各consumerの担当が行います。
+公開対象は検証済みstatic siteのみです。私有アカウントID・OCR本文・画像、tarball、package source、source map、credentialsを含めません。共通UI正本・固定配布物はprivate repositoryに保持します。G&S/SWの変更は各consumer担当へ引き継ぎます。
 
-既存Pages workflow（checkout→site upload→deploy）は変更せず、期限付きartifact URLを固定しません。Chromium desktop/mobileで確認し、物理iPhone/Safari/Firefox/実screen readerは未検証です。
+既存Pages workflow（checkout→site upload→deploy）は変更せず、期限付きartifact URLを固定しません。Chromium desktop/mobileで検証し、実機iPhone/Safari/Firefox/OS IME/実screen readerは未検証です。
